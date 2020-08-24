@@ -33,10 +33,7 @@ ApplicationWindow {
 
     ColumnLayout {
         spacing: 0
-        Layout.fillWidth: true
-        Layout.fillHeight: true
-        height: parent.height
-        width: parent.width
+        anchors.fill: parent
 
         RowLayout {
             Layout.preferredHeight: parent.height * top_row_ratio
