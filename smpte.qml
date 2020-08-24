@@ -11,7 +11,7 @@ ApplicationWindow {
 
     id: root
 
-    property color gray: Qt.rgba(104 / 255, 104 / 255, 104 / 255)
+    property color dull_white: Qt.rgba(180 / 255, 180 / 255, 180 / 255)
     property color white: Qt.rgba(235 / 255, 235 / 255, 235 / 255)
     property color yellow: Qt.rgba(180 / 255, 180 / 255, 16 / 255)
     property color cyan: Qt.rgba(16 / 255, 180 / 255, 180 / 255)
@@ -40,7 +40,7 @@ ApplicationWindow {
             spacing: 0
 
             Rectangle {
-                color: gray
+                color: dull_white
                 Layout.fillWidth: true
                 Layout.fillHeight: true
             }
@@ -124,7 +124,7 @@ ApplicationWindow {
             }
 
             Rectangle {
-                color: gray
+                color: dull_white
                 Layout.fillWidth: true
                 Layout.fillHeight: true
             }
