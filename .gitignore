@@ -1,0 +1,21 @@
+### CMake ###
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+CTestConfig.cmake
+CTestCustom.cmake
+*.txt.user
+*Mock.h
+*.kdev4
+CTestConfig.cmake
+CTestCustom.cmake
+*.swp
+/libs/configs/resources/properties_localization.h
+/libs/environment/resources/actions_localization.h
+*.qm
+oe-workdir
+oe-logs
