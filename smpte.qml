@@ -11,18 +11,18 @@ ApplicationWindow {
 
     id: root
 
-    property var gray: Qt.rgba(104 / 255, 104 / 255, 104 / 255, 1)
-    property var white: Qt.rgba(235 / 255, 235 / 255, 235 / 255, 1)
-    property var yellow: Qt.rgba(180 / 255, 180 / 255, 16 / 255, 1)
-    property var cyan: Qt.rgba(16 / 255, 180 / 255, 180 / 255, 1)
-    property var green: Qt.rgba(16 / 255, 180 / 255, 16 / 255, 1)
-    property var magenta: Qt.rgba(180 / 255, 16 / 255, 180 / 255, 1)
-    property var red: Qt.rgba(180 / 255, 16 / 255, 16 / 255, 1)
-    property var blue: Qt.rgba(16 / 255, 16 / 255, 180 / 255, 1)
-    property var black: Qt.rgba(16 / 255, 16 / 255, 16 / 255, 1)
+    property color gray: Qt.rgba(104 / 255, 104 / 255, 104 / 255)
+    property color white: Qt.rgba(235 / 255, 235 / 255, 235 / 255)
+    property color yellow: Qt.rgba(180 / 255, 180 / 255, 16 / 255)
+    property color cyan: Qt.rgba(16 / 255, 180 / 255, 180 / 255)
+    property color green: Qt.rgba(16 / 255, 180 / 255, 16 / 255)
+    property color magenta: Qt.rgba(180 / 255, 16 / 255, 180 / 255)
+    property color red: Qt.rgba(180 / 255, 16 / 255, 16 / 255)
+    property color blue: Qt.rgba(16 / 255, 16 / 255, 180 / 255)
+    property color black: Qt.rgba(16 / 255, 16 / 255, 16 / 255)
     // approximation
-    property var i_minus: Qt.rgba(0, 33 / 255, 76 / 255, 1)
-    property var q_plus: Qt.rgba(50 / 255, 0, 106 / 255, 1)
+    property color i_minus: Qt.rgba(0, 33 / 255, 76 / 255)
+    property color q_plus: Qt.rgba(50 / 255, 0, 106 / 255)
     property var top_row_ratio: 0.67
     property var middle_row_ratio: 0.08
     property var bottom_row_ratio: 0.25
