@@ -4,6 +4,8 @@
 #include <QtQml/QQmlApplicationEngine>
 #include <QtQml/QQmlContext>
 
+#include <cstdio>
+
 int main(int argc, char* argv[])
 {
 	QSurfaceFormat surfaceFormat;
@@ -22,7 +24,10 @@ int main(int argc, char* argv[])
 
 	/* exit on any keypress */
 	QSocketNotifier* stdinNotifier = new QSocketNotifier(fileno(stdin), QSocketNotifier::Read, nullptr);
-	QObject::connect(stdinNotifier, &QSocketNotifier::activated, [&] { app.exit(0); });
+	QObject::connect(stdinNotifier, &QSocketNotifier::activated, [&] {
+		std::getchar();
+		app.exit(0);
+	});
 
 	return app.exec();
 }
