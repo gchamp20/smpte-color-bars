@@ -5,6 +5,10 @@ project(smpte-color-bars)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 set(CMAKE_AUTORCC ON)
+set(PROJECT_VERSION 1.0.0)
+
+configure_file(config.h.in config.h)
+include_directories(${PROJECT_BINARY_DIR})
 
 find_package(Qt5 5.15 REQUIRED COMPONENTS
 		Core
