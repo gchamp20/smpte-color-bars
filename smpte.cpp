@@ -6,6 +6,8 @@
 
 #include <cstdio>
 
+#include "config.h"
+
 int main(int argc, char* argv[])
 {
 	QSurfaceFormat surfaceFormat;
@@ -16,7 +18,8 @@ int main(int argc, char* argv[])
 	QSurfaceFormat::setDefaultFormat(surfaceFormat);
 
 	QGuiApplication app(argc, argv);
-	QGuiApplication::setApplicationName("smpte");
+	QGuiApplication::setApplicationName("smpte-color-bars");
+	QGuiApplication::setApplicationVersion(PROJECT_VERSION);
 
 	QQmlApplicationEngine engine;
 	engine.addImportPath("qrc:");
